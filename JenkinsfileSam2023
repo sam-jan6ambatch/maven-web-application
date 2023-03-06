@@ -14,14 +14,14 @@ git branch: 'development', credentialsId: '5734f35b-29da-4c48-8d59-354e2643f078'
 stage('Build'){
 sh "${mavenHome}/bin/mvn clean package"
 }
-
+/*
 stage( 'ExecuteSonarQubeReport'){
 sh "${mavenHome}/bin/mvn clean sonar:sonar"
 }
 stage( 'UploadArtifactIntoNexus'){
 sh "${mavenHome}/bin/mvn clean deploy"
 }
-
+*/
 stage( 'DeployApplicationIntoTomcatServer'){
 sshagent(['293be6e9-34ac-4d5d-848d-a0bdb36a1d66']) {
      sh (
