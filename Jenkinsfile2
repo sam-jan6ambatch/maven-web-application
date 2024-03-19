@@ -26,12 +26,12 @@ node {
     }
   }
 */ 
-}
+
 catch(e) {
 currentBuild.result = "FAILED"
 throw e
 }
-finally{
+finally {
 sendSlackNotifications(currentBuild.result)
 }
   
