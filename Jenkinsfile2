@@ -26,6 +26,7 @@ node {
     }
   }
 */ 
+}
 def SendSlackNotifications (String Buildstatus = STARTED) {
 build status = buildStatus ?: 'SUCCESS'
 def colorName = 'RED'
@@ -47,4 +48,4 @@ def summery = "${subject} (${env.BUILD_URL})"
 
   // Send notifications
   slackSend (color: colorCode, message: summary, channel: '#hdfcbank')
-}
+
