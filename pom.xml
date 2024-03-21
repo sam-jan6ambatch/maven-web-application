@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://13.126.75.247:9000/</sonar.host.url>
+		<sonar.host.url>http://172.31.32.103:9000/</sonar.host.url>
                 <sonar.login>squ_afa70730f9fcbbcdc9c10d365ae0747dc74fda27</sonar.login>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Sambijit Releases Nexus Repository</name>
-	      <url>http://13.201.33.107:9980/sambijit/repository/hdfcbank-release/</url>
+	      <url>http://65.2.148.140:9980/sambijit/repository/hdfcbank-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Sambijit Snapshot Nexus Repository </name>
-	      <url>http://13.201.33.107:9980/sambijit/repository/hdfcbank-snapshot/</url>
+	      <url>http://65.2.148.140:9980/sambijit/repository/hdfcbank-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
